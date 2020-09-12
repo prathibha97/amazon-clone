@@ -4,7 +4,7 @@ import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "../context/StateProvider";
 function Product({ title, image, price, rating, id }) {
   const [{basket}, dispatch] = useStateValue();
-  console.log('this is the basket >>>',basket)
+  // console.log('this is the basket >>>',basket)
   const addToBasket = () => {
     //dispatch the item into the data layer
     dispatch({
